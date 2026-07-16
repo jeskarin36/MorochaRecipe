@@ -13,15 +13,15 @@ import shoopingListRoutes from "./routes/shoopingList.js";
 
 dotenv.config();
 
-const app = express();
+const app = express();  
 const __dirname = path.resolve();
 
-// Middlewares
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Rutas de API
+
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/pantry", pantryRoutes);

@@ -1,0 +1,1 @@
+const vacio=2
