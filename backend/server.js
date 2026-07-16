@@ -88,3 +88,6 @@ app.listen(PORT, () => {
 
 }); 
 
+
+
+server.timeout = 60000;
