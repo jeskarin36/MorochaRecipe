@@ -1,4 +1,4 @@
-import app from '../server.js';
+import app from '../backend/server.js';
 import serverless from 'serverless-http';
 
 
