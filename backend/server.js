@@ -78,16 +78,12 @@ if (process.env.NODE_ENV === "production") {
 
 
 
-const PORT = process.env.PORT || 5000;
+if (process.env.NODE_ENV !== 'production') {
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, () => {
+        console.log(`Servidor local corriendo en el puerto ${PORT}`);
+    });
+}
 
-
-
-const server = app.listen(PORT, () => {
-
-  console.log(`Servidor corriendo en el puerto ${PORT}`);
-
-}); 
-
-
-
-server.timeout = 60000;
+// Exportación para ES Modules
+export default app;
