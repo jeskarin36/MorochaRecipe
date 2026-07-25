@@ -1,5 +1,5 @@
-import app from '../server.js'; // Importas tu app usando import
+import app from '../server.js';
 import serverless from 'serverless-http';
 
-// Exportas la app envuelta para Vercel
+
 export default serverless(app);
